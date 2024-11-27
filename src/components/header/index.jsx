@@ -1,11 +1,16 @@
+import { useState, useEffect } from 'react';
 import headerData from '@/data/header-opts.json';
-import '@/components/header/header.css';
 
 const Header = () => {
 
+    const [activeOption, setActiveOption] = useState('About');
+    const [isScrolled, setIsScrolled] = useState(false);
     const { header } = headerData;
-    console.log(header);
     
+    useEffect(() => {
+        
+    })
+
     return(
         <nav>
             <ul>
